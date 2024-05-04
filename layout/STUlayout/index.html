@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bx bxl-codepen"></i>
+                <span>NeoCode</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+
+        <div class="user">
+            <img class="user-img" src="neocodeLOGO.png" alt="neocode">
+            <p class="bold">User name</p>
+            <p>Staff or Student</p>
+        </div>
+        <ul>
+                        <li>
+                            <a href="#">
+                                <i class="bx bxs-grid-alt"></i>
+                                <span class="nav-item">Students info</span>
+                            </a>
+                            <span class="tooltip">Staff info</span>
+                        </li>
+
+            <li>
+                <a href="#">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Network</span>
+                </a>
+                <span class="tooltip">Network</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Duck bot</span>
+                </a>
+                <span class="tooltip">Duck bot</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bx bxs-invader"></i>
+                    <span class="nav-item">Quack!</span>
+                </a>
+                <span class="tooltip">Quack!</span>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bx bxs-log-out"></i>
+                    <span class="nav-item">log out</span>
+                </a>
+                <span class="tooltip">log out</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>TEST</h1>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+
+    btn.onclick = function(){
+        sidebar.classList.toggle("active");
+    }
+
+</script>
+</html>
